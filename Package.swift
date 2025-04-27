@@ -17,7 +17,9 @@ let package = Package(
             name: "MetaPixelPlugin",
             dependencies: [
                 .product(name: "Capacitor", package: "capacitor-swift-pm"),
-                .product(name: "Cordova", package: "capacitor-swift-pm")
+                .product(name: "Cordova", package: "capacitor-swift-pm"),
+                .product(name: "FBSDKCoreKit", package: "facebook-ios-sdk"),
+                .product(name: "FBSDKLoginKit", package: "facebook-ios-sdk")
             ],
             path: "ios/Sources/MetaPixelPlugin"),
         .testTarget(
