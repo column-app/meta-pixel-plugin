@@ -12,11 +12,10 @@ public class MetaPixelPlugin extends Plugin {
     private MetaPixel implementation = new MetaPixel();
 
     @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
+    public void getAnonymousID(PluginCall call) {
 
         JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
+        ret.put("value", implementation.getAnonymousID());
         call.resolve(ret);
     }
 }

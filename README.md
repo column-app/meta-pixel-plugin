@@ -13,7 +13,7 @@ npx cap sync
 
 <docgen-index>
 
-* [`getAnonymousID()`](#getAnonymousID)
+* [`getAnonymousID()`](#getanonymousid)
 
 </docgen-index>
 

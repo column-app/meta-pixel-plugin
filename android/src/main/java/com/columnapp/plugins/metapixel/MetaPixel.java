@@ -1,11 +1,12 @@
 package com.columnapp.plugins.metapixel;
 
 import android.util.Log;
+import com.facebook.appevents.AppEventsLogger;
+
 
 public class MetaPixel {
 
-    public String echo(String value) {
-        Log.i("Echo", value);
-        return value;
+    public String getAnonymousID() {
+        return AppEventsLogger.getAnonymousID();
     }
 }

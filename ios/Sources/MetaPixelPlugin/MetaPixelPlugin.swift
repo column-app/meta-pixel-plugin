@@ -10,14 +10,11 @@ public class MetaPixelPlugin: CAPPlugin, CAPBridgedPlugin {
     public let identifier = "MetaPixelPlugin"
     public let jsName = "MetaPixel"
     public let pluginMethods: [CAPPluginMethod] = [
-        CAPPluginMethod(name: "echo", returnType: CAPPluginReturnPromise)
+        CAPPluginMethod(name: "getAnonymousID", returnType: CAPPluginReturnPromise)
     ]
     private let implementation = MetaPixel()
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
-        call.resolve([
-            "value": implementation.echo(value)
-        ])
+    @objc func getAnonymousID(_ call: CAPPluginCall) {
+        call.resolve(["value": implementation.getAnonymousID()])
     }
 }
