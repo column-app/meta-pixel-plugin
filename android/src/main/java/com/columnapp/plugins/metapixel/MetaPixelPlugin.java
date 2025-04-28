@@ -12,8 +12,7 @@ public class MetaPixelPlugin extends Plugin {
     private MetaPixel implementation = new MetaPixel();
 
     @PluginMethod
-    public void getAnonymousID(PluginCall call) {
-
+    public void getAnonymousID(PluginCall call) throws NoSuchMethodException {
         JSObject ret = new JSObject();
         ret.put("value", implementation.getAnonymousID());
         call.resolve(ret);
