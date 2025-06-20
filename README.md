@@ -5,7 +5,7 @@ Capacitor Plugin for Meta Pixel
 ## Install
 
 ```bash
-npm install meta-pixel-plugin
+npm install @column-news/meta-pixel-plugin
 npx cap sync
 ```
 
