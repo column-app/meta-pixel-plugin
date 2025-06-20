@@ -1,5 +1,5 @@
 {
-  "name": "meta-pixel-plugin",
+  "name": "@column-news/meta-pixel-plugin",
   "version": "0.0.1",
   "description": "Capacitor Plugin for Meta Pixel",
   "main": "dist/plugin.cjs.js",
